@@ -17,7 +17,7 @@ template<class T>
 class SqList{   // My sequence list class
 public:
     SqList(int = 20);
-    ~SqList(){delete [] IBSN;}  // destructor defined in header file
+    virtual ~SqList(){delete [] IBSN;}  // destructor defined in header file
     bool my_push_back(T);
     void traverse();
     bool insert(int,T);
